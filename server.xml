@@ -1,0 +1,15 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<root>
+	<servers>
+		<server  id="1"   ip="122.11.47.94"  port="10099"/>
+		<server  id="2"   ip="122.11.47.94"  port="10098"/>
+		<server  id="3"   ip="122.11.47.94"  port="10097"/>
+		<server  id="4"   ip="122.11.47.94"  port="10096"/>
+		<server  id="5"   ip="122.11.47.94"  port="10095"/>
+		<server  id="6"   ip="122.11.47.94"  port="20001"/>
+	</servers>
+
+	<shareurl  url="http://122.11.47.96:10000/download/index.html"/>		
+	<version   server="1.0"  ios="1.0"  android="1.0"/>
+
+</root>

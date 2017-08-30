@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="images/css.css">
+    <script src="./jquery.min.js"></script>
+	<title>唱吧</title>
+</head>
+<body>
+	<a href="javascript:a()"><div align="center"><img src="images/chatbg.png" id="img1"></div></a>
+<!--	<div id='popweixin'>
+    <div class='tip top2bottom animate-delay-1'>
+        <img src='images/wechat_appstore_popup.png'/>
+    </div>
+</div>
+-->
+<script type="text/javascript">
+
+function a(){
+    var ua = navigator.userAgent.toLowerCase();
+    if (/android/.test(ua)) {
+        if(/micromessenger/.test(ua)){
+             document.getElementById("popweixin").style.display = "block"; 
+             document.getElementById("link").href="http://346382755.github.io/song/web/songkba_20170829.apk"          
+        }else{
+		window.location.href="itms-services://?action=download-manifest&url=https://346382755.github.io/song/web/song.plist";
+        }
+    }
+   if (/iphone|ipad/.test(ua)) {
+	//alert( "该游戏版本仅支持安卓系统，更多精彩敬请期待！")
+        if(/micromessenger/.test(ua)){              
+
+	window.location.href="itms-services://?action=download-manifest&url=https://346382755.github.io/song/web/song.plist";
+        }else{
+	window.location.href="itms-services://?action=download-manifest&url=https://346382755.github.io/song/web/song.plist";
+        }      
+
+       
+         
+    }
+
+
+
+}
+$(document).ready(function(){ 
+   var uaa = navigator.userAgent.toLowerCase();
+     if (/iphone|ipad/.test(uaa)) {
+        //window.open('itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/zhang-hai/songkbar/master/song.plist')
+	window.location.href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/hurixing/downlaod/master/song.plist";
+    }else{
+      setTimeout(function(){
+      window.location.href = "http://346382755.github.io/song/web/songkba_20170829.apk"
+    },1000);
+    }
+
+    
+})
+</script>
+</body>
+</html>
